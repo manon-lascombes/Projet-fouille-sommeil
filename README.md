@@ -1,11 +1,12 @@
 # Projet-fouille-sommeil
 
 Données : https://www.kaggle.com/datasets/rxnach/student-stress-factors-a-comprehensive-analysis
-#Description des données
+
+# Description des données
 
 
 
-#Objectif du projet :
+# Objectif du projet
 
 Nous voulons réaliser une classification automatique du niveau d’anxiété chez les étudiants. Pour avoir une classification optimale, nous comparerons les paramètres et les performances de la méthode “arbre de décision” pour trouver les paramètres qui nous permettent d’avoir la meilleure classification pour le niveau d’anxiété des étudiants. 
 
