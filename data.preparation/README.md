@@ -1,6 +1,6 @@
 # **Documentation d’utilisation du script *Script\_stress\_level.Rmd***
 
-**1\. Prérequis**
+## **1\. Prérequis**
 
 Les prérequis permettant d’utiliser le fichier Script\_stress\_level.Rmd dans le but d’un pré-traitement des données contenu dans le fichier StressLevelDataset.csv sont : 
 
@@ -11,7 +11,7 @@ Les prérequis permettant d’utiliser le fichier Script\_stress\_level.Rmd dans
 
   
 
-## **3\. Étapes pas‑à‑pas**
+## **2\. Étapes pas‑à‑pas**
 
 1. Cloner ou copier le script dans votre projet R ou RStudio.
 
@@ -21,7 +21,7 @@ Les prérequis permettant d’utiliser le fichier Script\_stress\_level.Rmd dans
 
 4. Vérifier la sortie de chaque cellule. 
 
-## **4\. Résultats attendus**
+## **3\. Résultats attendus**
 
 Ce script permet de fournir la matrice individus-variables pré-traiter du fichier StressLevelDataset.csv. Nous obtenons donc à la fin de ce script un tableau prêt à traiter. 
 
