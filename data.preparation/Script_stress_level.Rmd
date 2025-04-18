@@ -1,0 +1,46 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+Lecture des données au format CSV 
+```{r}
+data <- read.csv("StressLevelDataset.csv")
+
+summary(data)
+
+data
+```
+On ne voit pas de valeurs manquantes ou de valeurs aberrantes. Donc nous réalisons un test de corrélation pour essayer d'y voir plus clair. 
+
+
+Test de corrélation entre les variables
+```{r}
+mcor <- cor(data)
+
+library(corrplot)
+corrplot(mcor, type="lower", order="hclust", tl.col="black", tl.srt=45, addCoef.col = T, method="number", number.cex=0.5)
+```
+Nous pouvons voir que la variable "blood_pressure" n'est pas très corrélée avec les autres variables. Nous allons donc l'enlever de notre dataset.
+
+
+Transformation de la variable "stress" en variable quanlitative 
+```{r}
+library(tidymodels)
+
+data$stress_level <- as.factor(data$stress_level)
+
+write.csv(data, "StressLevelDatasetPre_traiter.csv", row.names = FALSE)
+
+```
+
+
+La normalisation des données étant gérer par Knime, nous ne la réalisons pas ici.
+
+
+
+
+
+
+
