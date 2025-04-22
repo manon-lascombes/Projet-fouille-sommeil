@@ -25,13 +25,13 @@ corrplot(mcor, type="lower", order="hclust", tl.col="black", tl.srt=45, addCoef.
 Nous pouvons voir que la variable "blood_pressure" n'est pas très corrélée avec les autres variables. Nous allons donc l'enlever de notre dataset.
 
 
-Transformation de la variable "stress" en variable quanlitative 
+Transformation de la variable "stress" en variable quanlitative et on supprime la variable "blood_pressure"
 ```{r}
 library(tidymodels)
 
 data$stress_level <- as.factor(data$stress_level)
 
-write.csv(data, "StressLevelDatasetPre_traiter.csv", row.names = FALSE)
+write.csv(data %>% select(-blood_pressure), "StressLevelDatasetPre_traiter.csv", row.names = FALSE)
 
 ```
 
