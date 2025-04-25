@@ -78,8 +78,6 @@ Stress_Level: C’est notre variable cible de type quantitative, (0 = Faible, 1 
 
  
 
-
-
 # Objectif du projet
 
 Nous voulons réaliser une classification automatique du niveau de stress chez les étudiants. Pour avoir une classification optimale, nous comparerons les paramètres et les performances de la méthode “arbre de décision” pour trouver les paramètres qui nous permettent d’avoir la meilleure classification pour le niveau de stress des étudiants. 
@@ -89,4 +87,8 @@ Pour cela, nous ferons tout d’abord une analyse préliminaire des données, no
 Puis, nous regarderons si nos variables ont besoin d’être transformés (par exemple : transformer nos données quantitatives en qualitative, ou normaliser nos données). Nous devrons transformer notre variable “stress_level” en classe afin de pouvoir réaliser la classification. 
 
 Ces étapes nous permettront d’avoir un tableau d’individus-variables. 
-Puis, nous construirons notre modèle sur Knime, nous réaliserons donc un modèle de type arbre de décision. Nous évaluerons ce premier modèle en regardant son taux d’erreur. Puis, nous modifierons les paramètres de ce modèle et à chaque changement, nous déterminerons le taux d’erreur du modèle (avec donc les nouveaux paramètres). Le meilleur modèle sera celui avec les paramètres donnant le taux d’erreur le plus faible. 
+Puis, nous construirons notre modèle sur Knime, nous réaliserons donc un modèle de type arbre de décision. Nous évaluerons ce premier modèle en regardant son taux d’erreur. Puis, nous modifierons les paramètres de ce modèle et à chaque changement, nous déterminerons le taux d’erreur du modèle (avec donc les nouveaux paramètres). Le meilleur modèle sera celui avec les paramètres donnant le taux d’erreur le plus faible.
+
+# Résultats obtenus
+
+Après avoir testé différents paramètres de notre modèle avec la méthode de classification en arbre de décision, nous avons mis en évidence que les paramètres Stratified sampling - 5 cross validation avec Gini index - No pruning, permettent d’obtenir le taux d’erreur le plus faible qui est de 10.818%, pour nos données.  
