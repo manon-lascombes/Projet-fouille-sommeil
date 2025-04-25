@@ -1,4 +1,4 @@
-​Le jeu de données intitulé "Student Stress Factors: A Comprehensive Analysis" disponible sur Kaggle comprend 1 100 entrées et 21 variables, explorant divers facteurs influençant le stress chez les étudiants. Ces variables sont regroupées en cinq catégories principales :​
+​Le jeu de données intitulé "Student Stress Factors: A Comprehensive Analysis" sur Kaggle et "StressLevelDataset" pour ce projet est disponible sur Kaggle comprend 1 100 entrées et 21 variables, explorant divers facteurs influençant le stress chez les étudiants. Ces variables sont regroupées en cinq catégories principales :​
 
 Facteurs psychologiques :
 
