@@ -25,7 +25,7 @@ corrplot(mcor, type="lower", order="hclust", tl.col="black", tl.srt=45, addCoef.
 Nous pouvons voir que la variable "blood_pressure" n'est pas très corrélée avec les autres variables. Nous allons donc l'enlever de notre dataset.
 
 
-Transformation de la variable "stress" en variable quanlitative et on supprime la variable "blood_pressure"
+Transformation de la variable "stress" en variable qualitative et on supprime la variable "blood_pressure"
 ```{r}
 library(tidymodels)
 
